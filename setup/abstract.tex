@@ -1,0 +1,51 @@
+% !Mode:: "TeX:UTF-8" 
+
+%-----------------------------------------------------------------------------------------
+% 中文摘要
+\clearpage
+\titlespacing{\chapter}{0pt}{0mm}{5mm}
+\Abstract{摘\quad 要}{Abstract (In Chinese)}
+
+
+\defaultfont
+
+
+
+随着互联网技术的发展，网络用户在社交网络和电商平台上产生了大量包含情感信息的主观性文本。这些文本信息具有巨大的应用价值和研究意义，例如分析用户观点、态度和情感倾向。本研究主要探讨了在多角色对话情感溯源任务上开展的情感原因对提取相关研究，以帮助研究者更好地理解对话数据集中的隐含信息、探索多角色对话情感变化的规律和特征。
+% 本研究具有广泛的应用价值，例如应用于智能客服和情感智能交互系统中实现更加智能、自然和人性化的人机交互，还可为心理学和社会学研究提供有益的数据支持，帮助研究者更好地理解人类情感变化和相互作用的机制。
+
+针对多角色对话情感溯源任务的研究，目前尚存不足。一方面，目前许多方法的情感原因提取性能较难令人满意。另一方面，现有的情感原因对提取范式容易受到错误传递问题的影响从而降低性能。
+为解决这个问题，我们提出了一种名为Dag-Rank的一步方法来进行情感-原因对提取。Dag-Rank方法包括学习子句向量表示、通过有向无环图模拟子句间关系以获得更好的子句表示，以及将相对位置增强的子句对排序整合到一个统一的神经网络中。
+Dag-Rank方法具有两个主要优势：首先，它彻底避免了错误传递问题，使得模型更为合理和现实。其次，它充分考虑了对话场景下的先验知识，为每个话语寻找了更贴切的情感提取，而不仅仅是将每个话语与一定数量的周围话语连接起来，从而能更好地提取信息。
+
+为了验证本研究所提出的Dag-Rank方法，我们在RECCON数据集上进行了大量实验。实验结果表明，Dag-Rank方法在提取情感原因对、情感子句和原因子句方面优于其他基线系统。与其他现有方法相比，Dag-Rank 在提取正确的情感原因对方面具有更高的召回率和相近的精确度，表明该研究所提出的一步方法在情感原因提取任务上具有很大的潜力。我们还对模型的各个部分进行了详细的消融实验，实验结果进一步验证了Dag-Rank方法在处理错误传递问题和利用有向无环图捕捉子句间关系方面的独特优势。
+我们的研究为多角色对话情感溯源任务提供了一个新的研究视角。本研究不仅为情感原因提取任务提供了一个有效的解决方案，还为相关领域提供了新的思路和技术。我们相信，这种方法可以进一步推动情感计算、自然语言处理和人工智能等领域的研究发展。
+
+\vspace{\baselineskip}
+\noindent{\textbf{ 关\hspace{0.5em}键\hspace{0.5em}词：}} 自然语言处理；文本情感溯源；图神经网络
+
+
+%-----------------------------------------------------------------------------------------
+% 英文摘要
+\clearpage
+%\phantomsection
+\markboth{Abstract}{Abstract}
+
+\titlespacing{\chapter}{0pt}{0mm}{5mm}
+\chapter*{ABSTRACT}
+
+With the development of internet technology, online users have generated a large amount of subjective text containing emotional information on social networks and e-commerce platforms. This text data has significant application value and research significance, such as analyzing user opinions, attitudes, and emotional tendencies. This study mainly investigates the emotion-cause pair extraction (ECPE)  research in multi-role dialogue scenario to help researchers better understand the hidden information in dialogue datasets and explore the patterns and characteristics of multi-role dialogue emotion changes.
+
+% providing beneficial data support for psychological and sociological research, helping researchers better understand the mechanisms of human emotional changes and interactions.
+
+Current research on multi-role dialogue emotion tracing tasks is insufficient. Existing ECPE research methods are easily affected by error propagation problems, thereby reducing performance. To address this issue, we propose a one-step method called Dag-Rank for emotion-cause pair extraction. The Dag-Rank method includes learning clause vector representation, simulating clause relationships through directed acyclic graphs to obtain better clause representations, and integrating relative position-enhanced clause pair sorting into a unified neural network. Dag-Rank completely avoids the error propagation problem, making the model more reasonable and realistic, and it fully considers the prior knowledge in dialogue scenarios, finding more appropriate emotion extraction for each utterance rather than simply connecting each utterance with a certain number of surrounding utterances, thus better extracting information.
+
+To validate our method, we conducted extensive experiments on the RECCON dataset. The experimental results show that the Dag-Rank method is superior to other baseline systems in extracting emotion-cause pairs, emotion clauses, and cause clauses. We also conducted detailed ablation experiments on various parts of the model, with the results further verifying the unique advantages of our proposed Dag-Rank method in addressing error propagation problems and utilizing directed acyclic graphs to capture clause relationships.
+Our research also provides a new research perspective for multi-role dialogue emotion tracing tasks. By introducing the Dag-Rank method, our research not only provides an effective solution for emotion-cause extraction tasks but also offers new ideas and techniques for related fields. 
+
+\vspace{\baselineskip}
+\noindent{\textbf{KEY WORDS:}}  Natural Language Processing; ECPE; Graph Neural Networks.
+
+
+\titlespacing{\chapter}{0pt}{-6mm}{5mm}
+\clearpage{\pagestyle{empty}\cleardoublepage}

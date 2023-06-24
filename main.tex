@@ -1,0 +1,58 @@
+% !Mode:: "TeX:UTF-8"
+
+\documentclass[openany,twoside,nofonts,AutoFakeBold,UTF8]{ctexbook}
+% \addtokomafont{labelinglabel}{\sffamily}
+
+\input{setup/package}
+\graphicspath{{figures/}}
+
+%===================================== Cover and TOC =====================================
+\begin{document}
+\input{setup/format}
+
+\begin{titlepage}   % 查重部分
+\includepdf[]{pdfs/封面.pdf}   % 查重部分
+\end{titlepage}   % 查重部分
+
+\frontmatter
+
+
+% \input{setup/denotation}
+
+%======================================= Main Body =======================================
+\input{setup/abstract}  % 查重部分
+\input{setup/content}  % 查重部分
+
+\mainmatter\defaultfont\sloppy\raggedbottom
+
+\include{body/body}  % 查重部分
+\include{body/method}  % 查重部分
+\include{body/experiments}  % 查重部分
+\include{body/conclusion}  % 查重部分
+\include{appendix/acknowledgements}
+
+% \include{body/chapter_1}  % 查重部分
+% \include{body/chapter_2}  % 查重部分
+% \include{body/chapter_3}  % 查重部分
+
+
+
+
+%======================================= Reference =======================================
+\wuhao\selectfont
+\bibliographystyle{bib/xjtuthesis-numerical}
+\addcontentsline{toc}{chapter}{参考文献}
+\addcontentsline{toe}{chapter}{References}
+\addtolength{\bibsep}{-0.8em}
+\bibliography{bib/mybib}
+
+%======================================= Appendix ========================================
+\include{setup/formatApp}
+\include{appendix/OriginalText}
+\include{appendix/TranslatedText}
+\include{appendix/Materials}
+
+% \input{setup/format}
+
+
+\end{document} 
