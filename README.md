@@ -3,6 +3,11 @@
 
 使用模版来源[XJTU-Bachelor-Thesis-LaTeX-Template](https://github.com/1989Ryan/XJTU-Bachelor-Thesis-LaTeX-Template)，由西安交通大学校友 Zhao Zirui 等完成，感谢他的工作。
 
+
+# 先看Issues，查看已知的格式问题及相应解决方案
+
+### 2024.6.1发现格式与2024届的word模板要求的格式有出入，因此先看Issues并解决现有问题
+
 ### 使用方法
 
 将所有文件导入到overleaf上编译。
